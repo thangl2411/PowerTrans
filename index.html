@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Power Trans Company Limited — Shaping the Future of Renewable Energy</title>
+  <meta name="description" content="Power Trans Company Limited: Giải pháp điện mặt trời công nghệ cao, từ tư vấn kỹ thuật đến thi công, O&M và mô hình tài chính linh hoạt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <nav class="nav" aria-label="Main">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>PowerTrans</span>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="#solutions">Giải pháp</a>
+        <a href="#milestones">Cột mốc</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+      <button class="btn" onclick="scrollToId('contact')">Request a Quote</button>
+      <button class="btn btn-outline menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu" style="display:none">
+      <a href="#home" onclick="toggleMenu()">Trang chủ</a>
+      <a href="#about" onclick="toggleMenu()">Về chúng tôi</a>
+      <a href="#solutions" onclick="toggleMenu()">Giải pháp</a>
+      <a href="#milestones" onclick="toggleMenu()">Cột mốc</a>
+      <a href="#projects" onclick="toggleMenu()">Dự án</a>
+      <a href="#contact" onclick="toggleMenu()">Liên hệ</a>
+      <a href="#contact" class="btn" onclick="toggleMenu()">Request a Quote</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <video autoplay muted loop playsinline preload="auto" poster=""
+      aria-label="Phim nền cánh đồng điện mặt trời">
+      <source src="video - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-inner">
+      <div class="reveal">
+        <h1>Shaping the Future of Renewable Energy</h1>
+        <p class="lead">We integrate cutting-edge technology and engineering excellence to power a sustainable tomorrow.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px">
+          <button class="btn" onclick="scrollToId('solutions')">Discover Our Impact</button>
+          <a class="btn btn-outline" href="#projects">Xem dự án</a>
+        </div>
+        <div class="kpis" style="margin-top:20px">
+          <div class="kpi">
+            <div class="num counter" data-to="10" data-suffix="+">0</div>
+            <div class="lbl">Năm kinh nghiệm EPC & O&M</div>
+          </div>
+          <div class="kpi">
+            <div class="num counter" data-to="50" data-prefix=">" data-suffix=" MWp">0</div>
+            <div class="lbl">Thiết bị cung ứng</div>
+          </div>
+          <div class="kpi">
+            <div class="num counter" data-to="20" data-suffix="+">0</div>
+            <div class="lbl">Dự án đã hoàn thành (~15 MW)</div>
+          </div>
+        </div>
+      </div>
+      <div class="glass reveal">
+        <h3 style="margin:0 0 6px; color:var(--blue)">Power Trans Company Limited</h3>
+        <p style="color:#41546b">Slogan: Shaping the Future of Renewable Energy</p>
+        <ul style="padding-left:18px; margin:10px 0 0">
+          <li><strong>Tầm nhìn:</strong> Dẫn dắt đổi mới, tạo di sản xanh.</li>
+          <li><strong>Sứ mệnh:</strong> Sản phẩm & dịch vụ tái tạo vượt chuẩn.</li>
+          <li><strong>Giá trị cốt lõi:</strong> Trust • Quality • Service.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="reveal">Tại sao chọn Power Trans?</h2>
+        <span class="sub reveal">Your Trusted Partner in Solar Energy</span>
+      </div>
+      <div class="grid-4">
+        <div class="card reveal">
+          <div class="line-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M3 12h18M12 3v18" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="count counter" data-to="30" data-suffix="%+">0</div>
+          <h3>Giải pháp tối ưu</h3>
+          <p class="muted">CAPEX thấp, tối ưu IRR & thời gian hoàn vốn.</p>
+        </div>
+        <div class="card reveal">
+          <div class="line-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="count counter" data-to="100" data-suffix="%">0</div>
+          <h3>Chất lượng đảm bảo</h3>
+          <p class="muted">Thiết bị cao cấp, bảo hành & cam kết hiệu suất.</p>
+        </div>
+        <div class="card reveal">
+          <div class="line-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M4 20V8l8-5 8 5v12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 3v17" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="count counter" data-to="10" data-suffix="+">0</div>
+          <h3>Chuyên môn kỹ thuật</h3>
+          <p class="muted">Đội ngũ kỹ sư & thi công lành nghề.</p>
+        </div>
+        <div class="card reveal">
+          <div class="line-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/>
+            </svg>
+          </div>
+          <div class="count counter" data-to="30" data-suffix="%+">0</div>
+          <h3>Hỗ trợ tài chính</h3>
+          <p class="muted">Hợp tác ngân hàng; vốn từ 30%, linh hoạt PPA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="reveal">Pioneering Vietnam's Clean Energy Revolution</h2>
+        <span class="sub reveal">About Power Trans</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal" style="order:1">
+          <div class="about-img">
+            <svg viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-label="Ảnh doanh nghiệp hiện đại">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#0A2540"/>
+                  <stop offset="60%" stop-color="#123a64"/>
+                  <stop offset="100%" stop-color="#2ECC71"/>
+                </linearGradient>
+                <radialGradient id="g2" cx="25%" cy="20%" r="60%">
+                  <stop offset="0%" stop-color="#6ee39a" stop-opacity=".28"/>
+                  <stop offset="100%" stop-color="#0A2540" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="1200" height="800" fill="url(#g1)"/>
+              <circle cx="280" cy="220" r="340" fill="url(#g2)"/>
+              <g opacity=".35" fill="#ffffff">
+                <rect x="120" y="500" width="220" height="10" rx="5"/>
+                <rect x="360" y="520" width="260" height="10" rx="5"/>
+                <rect x="650" y="540" width="320" height="10" rx="5"/>
+                <rect x="360" y="560" width="180" height="10" rx="5"/>
+              </g>
+              <g transform="translate(760,160) scale(0.85)">
+                <rect x="0" y="280" width="340" height="220" rx="22" fill="#0e2d4f" opacity=".75"/>
+                <rect x="40" y="320" width="260" height="16" rx="8" fill="#2ECC71" opacity=".8"/>
+                <rect x="40" y="350" width="220" height="12" rx="6" fill="#eaf2f9" opacity=".8"/>
+                <rect x="40" y="370" width="220" height="12" rx="6" fill="#eaf2f9" opacity=".6"/>
+              </g>
+              <g transform="translate(160,140)">
+                <circle cx="160" cy="160" r="120" fill="#eaf2f9" opacity=".08"/>
+                <circle cx="160" cy="160" r="90" fill="#eaf2f9" opacity=".12"/>
+                <circle cx="160" cy="160" r="60" fill="#eaf2f9" opacity=".18"/>
+              </g>
+            </svg>
+          </div>
+          <div class="about-float">
+            <strong>Le Gia Huan</strong><br/>
+            Founder & CEO
+          </div>
+        </div>
+        <div class="reveal" style="order:2">
+          <p><strong>Power Trans Company Limited</strong> là tên tuổi đáng tin cậy trong ngành điện mặt trời tại Việt Nam, với đội ngũ kỹ sư điện và xây dựng dày dạn kinh nghiệm. Chúng tôi cộng tác cùng các thương hiệu toàn cầu để đảm bảo chất lượng tối đa:</p>
+          <ul style="padding-left:18px">
+            <li>Tấm pin: Jinko, Trina, Risen</li>
+            <li>Inverter: Sungrow, Huawei, SolarEdge, Sunways</li>
+            <li>Kết cấu & phụ kiện: Schletter, Austdoor, Holcom</li>
+          </ul>
+          <div class="card" style="margin-top:10px">
+            <h3>Thông điệp từ Nhà sáng lập</h3>
+            <p>“Là nhà sáng lập Power Trans Company Limited, tôi vinh dự được chia sẻ tầm nhìn về một tương lai tươi sáng và bền vững hơn... Cùng nhau, chúng ta có thể khai thác nguồn năng lượng vô tận của mặt trời để tạo nên tương lai xanh sạch hơn. Hãy chung tay xây dựng một thế giới nơi năng lượng bền vững được tiếp cận cho tất cả mọi người.”</p>
+            <p><em>— Le Gia Huan, Founder & CEO</em></p>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Mission and Vision">
+            <button class="tab-btn active" id="tab-mission" aria-controls="panel-mission" aria-selected="true" onclick="switchTab('mission')">Sứ mệnh</button>
+            <button class="tab-btn " id="tab-vision" aria-controls="panel-vision" aria-selected="false" onclick="switchTab('vision')">Tầm nhìn</button>
+          </div>
+          <div id="panel-mission" class="tab-panel active" role="tabpanel" aria-labelledby="tab-mission">
+            <ul>
+              <li>Cung cấp sản phẩm & dịch vụ năng lượng tái tạo hiện đại vượt chuẩn ngành.</li>
+              <li>Giảm phát thải, chống biến đổi khí hậu bằng giải pháp bền vững.</li>
+              <li>Xây dựng quan hệ đối tác dài hạn: niềm tin, chất lượng, tin cậy.</li>
+              <li>Trao quyền cộng đồng & mở rộng tiếp cận năng lượng sạch.</li>
+            </ul>
+          </div>
+          <div id="panel-vision" class="tab-panel" role="tabpanel" aria-labelledby="tab-vision">
+            <ul>
+              <li>Dẫn đầu đổi mới, thúc đẩy công nghệ điện mặt trời.</li>
+              <li>Tiên phong trách nhiệm doanh nghiệp & bảo vệ môi trường.</li>
+              <li>Truyền cảm hứng dịch chuyển bền vững toàn cầu.</li>
+              <li>Tạo di sản tích cực cho thế hệ mai sau.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones -->
+  <section id="milestones" class="milestones">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="reveal">Our Journey of Growth & Impact</h2>
+        <span class="sub reveal">Cột mốc phát triển</span>
+      </div>
+      <div class="timeline">
+        <div class="mile reveal">
+          <div class="dot"></div>
+          <div class="year">2019–2020</div>
+          <div class="big"><span class="counter" data-to="50" data-prefix="> " data-suffix=" MWp">0</span> tấm pin & inverter được cung ứng</div>
+          <div class="muted">Hoàn thiện > 20 dự án với tổng công suất ~15 MW</div>
+        </div>
+        <div class="mile reveal">
+          <div class="dot"></div>
+          <div class="year">2020 – Nay</div>
+          <div class="big">Doanh thu ~ <span class="counter" data-to="20" data-suffix=" triệu USD">0</span> (thiết bị)</div>
+          <div class="muted">Ra mắt inverter OEM cho phân khúc dân dụng</div>
+        </div>
+        <div class="mile reveal">
+          <div class="dot"></div>
+          <div class="year">2021 – 2022</div>
+          <div class="big">Tăng trưởng thêm ~ <span class="counter" data-to="40" data-suffix=" triệu USD">0</span> (Trading & EPC)</div>
+          <div class="muted">Mở rộng danh mục hợp tác quốc tế</div>
+        </div>
+        <div class="mile reveal">
+          <div class="dot"></div>
+          <div class="year">2023 – 2025</div>
+          <div class="big">Mục tiêu <span class="counter" data-to="10" data-suffix="%">0</span> thị phần inverter dân dụng</div>
+          <div class="muted">Doanh số tấm pin mục tiêu 20 MW/năm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="solutions">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="reveal">Advanced Engineering, End-to-End Solutions</h2>
+        <span class="sub reveal">Comprehensive Solar Energy Services</span>
+      </div>
+      <div class="grid-4">
+        <div class="card solution reveal">
+          <div class="cover1">
+           </div>
+          <div class="body">
+            <h3 class="title">Kỹ thuật & Tư vấn</h3>
+            <p>Khảo sát hiện trường, mô phỏng PVsyst, tối ưu kỹ thuật – tài chính theo nhu cầu dự án.</p>
+          </div>
+          <div class="more">
+            <a class="link" href="#contact">Tìm hiểu thêm
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="card solution reveal">
+          <div class="cover2" >
+          </div>
+          <div class="body">
+            <h3 class="title">Thi công & Lắp đặt</h3>
+            <p>Thi công an toàn – thẩm mỹ, tuân thủ tiêu chuẩn quốc tế và tối ưu vận hành lâu dài.</p>
+          </div>
+          <div class="more">
+            <a class="link" href="#contact">Tìm hiểu thêm
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="card solution reveal">
+          <div class="cover3"></div>
+          <div class="body">
+            <h3 class="title">Vận hành & Bảo trì</h3>
+            <p>Giám sát thời gian thực bằng AI, bảo dưỡng định kỳ, dịch vụ sau bán hàng tin cậy.</p>
+          </div>
+          <div class="more">
+            <a class="link" href="#contact">Tìm hiểu thêm
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="card solution reveal">
+          <div class="cover4" ></div>
+          <div class="body">
+            <h3 class="title">Mô hình tài chính</h3>
+            <p>Sở hữu từ 30% vốn hoặc PPA; chi phí điện thấp hơn EVN, tiết kiệm dài hạn.</p>
+          </div>
+          <div class="more">
+            <a class="link" href="#contact">Tìm hiểu thêm
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal" style="margin-top:22px; color: white">
+        <strong>Đối tác tài chính:</strong> Hợp tác ngân hàng & quỹ đầu tư; hỗ trợ vốn linh hoạt từ 30%.
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="reveal">Proven Success in the Field</h2>
+        <span class="sub reveal">Our Project Showcase</span>
+      </div>
+      <div class="grid-3">
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar White Feathers" src="feathers.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar White Feathers</div>
+                <div class="pill" style="margin:6px 0 8px">1,610.5 kWp</div>
+                <div style="font-size:13px">Risen 550 Wp • Huawei 100 kW</div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar Hong Ha" src="hong_ha.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar Hong Ha</div>
+                <div class="pill" style="margin:6px 0 8px">1,032 kWp</div>
+                <div style="font-size:13px">Jinko 400 Wp • SMA 75 kW</div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar Hung Long" src="hung_long.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar Hung Long</div>
+                <div class="pill" style="margin:6px 0 8px">675 kWp</div>
+                <div style="font-size:13px">Jinko 400 Wp • Sungrow 110 kW</div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar Compotech" src="compotech.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar Compotech</div>
+                <div class="pill" style="margin:6px 0 8px">217 kWp</div>
+                <div style="font-size:13px">Jinko 400 Wp • Huawei 100 kW</div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar Phu Hoang" src="phu_hoang.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar Phu Hoang</div>
+                <div class="pill" style="margin:6px 0 8px">1,009 kWp</div>
+                <div style="font-size:13px">Trina 455 Wp • Sungrow 110 kW</div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar Nhơn Trạch" src="nhon_trach.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar Nhơn Trạch</div>
+                <div class="pill" style="margin:6px 0 8px">450 kWp</div>
+                <div style="font-size:13px"></div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar An Việt" src="an_viet.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar An Việt</div>
+                <div class="pill" style="margin:6px 0 8px">800 kWp</div>
+                <div style="font-size:13px"></div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project reveal">
+          <div class="thumb">
+            <img alt="Solar Đồng Pháp" src="dong_phat.png"/>
+            <div class="overlay">
+              <div class="meta">
+                <div style="font-weight:900">Solar Đồng Pháp</div>
+                <div class="pill" style="margin:6px 0 8px">2000 kWp</div>
+                <div style="font-size:13px"></div>
+                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partners -->
+      <div class="section-head" style="margin-top:54px">
+        <h2 class="reveal">Powered by the World's Most Trusted Brands</h2>
+        <span class="sub reveal">Đối tác chiến lược</span>
+      </div>
+      <div class="carousel reveal" aria-label="Đối tác">
+        <div class="track" id="logoTrack">
+          <!-- set A -->
+          <div class="logo-card" aria-label="Jinko"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0b7a39">Jinko</text></svg></div>
+          <div class="logo-card" aria-label="Trina"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0a6cc2">Trina</text></svg></div>
+          <div class="logo-card" aria-label="Risen"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#f6b500">Risen</text></svg></div>
+          <div class="logo-card" aria-label="Sungrow"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f36c21">Sungrow</text></svg></div>
+          <div class="logo-card" aria-label="Huawei"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#d81b60">Huawei</text></svg></div>
+          <div class="logo-card" aria-label="SolarEdge"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#111">SolarEdge</text></svg></div>
+          <div class="logo-card" aria-label="Sunways"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f57c00">Sunways</text></svg></div>
+          <div class="logo-card" aria-label="Schletter"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#0d47a1">Schletter</text></svg></div>
+          <div class="logo-card" aria-label="Austdoor"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#1976d2">Austdoor</text></svg></div>
+          <div class="logo-card" aria-label="Holcom"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#2e7d32">Holcom</text></svg></div>
+          <!-- set B duplicate -->
+          <div class="logo-card" aria-label="Jinko"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0b7a39">Jinko</text></svg></div>
+          <div class="logo-card" aria-label="Trina"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0a6cc2">Trina</text></svg></div>
+          <div class="logo-card" aria-label="Risen"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#f6b500">Risen</text></svg></div>
+          <div class="logo-card" aria-label="Sungrow"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f36c21">Sungrow</text></svg></div>
+          <div class="logo-card" aria-label="Huawei"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#d81b60">Huawei</text></svg></div>
+          <div class="logo-card" aria-label="SolarEdge"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#111">SolarEdge</text></svg></div>
+          <div class="logo-card" aria-label="Sunways"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f57c00">Sunways</text></svg></div>
+          <div class="logo-card" aria-label="Schletter"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#0d47a1">Schletter</text></svg></div>
+          <div class="logo-card" aria-label="Austdoor"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#1976d2">Austdoor</text></svg></div>
+          <div class="logo-card" aria-label="Holcom"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#2e7d32">Holcom</text></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal" style="display:flex; flex-direction:column; gap:12px; justify-content:center">
+          <h2 style="color:#fff">Let's Build a Greener Future Together</h2>
+          <p>Power Trans đồng hành cùng doanh nghiệp và cộng đồng trong hành trình chuyển dịch năng lượng sạch với công nghệ hàng đầu và dịch vụ tận tâm.</p>
+          <div>
+            <p><strong>Địa chỉ:</strong> 121Bis Nguyễn Văn Trỗi, P.11, Q.Phú Nhuận, TP.HCM, Việt Nam</p>
+            <p><strong>Mã số thuế:</strong> 0315871748</p>
+            <p><strong>Điện thoại:</strong> (+84) 900 000 000</p>
+            <p><strong>Email:</strong> contact@powertrans.vn</p>
+          </div>
+          <div style="margin-top:8px">
+            <button class="btn" onclick="scrollToId('contactForm')">Liên hệ ngay</button>
+          </div>
+        </div>
+        <div class="card reveal">
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+            <div class="row">
+              <div class="field">
+                <label for="name">Họ và tên</label>
+                <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required/>
+              </div>
+              <div class="field">
+                <label for="company">Công ty</label>
+                <input id="company" name="company" type="text" placeholder="Power Trans Co., Ltd."/>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="email@company.com" required/>
+              </div>
+              <div class="field">
+                <label for="phone">Điện thoại</label>
+                <input id="phone" name="phone" type="tel" placeholder="090x xxx xxx"/>
+              </div>
+            </div>
+            <div class="field" style="margin-top:10px">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" placeholder="Nhu cầu, công suất, địa điểm lắp đặt..." required></textarea>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:16px">
+              <div id="formNote" style="color:#cfe3f5">Chúng tôi sẽ phản hồi trong 1–2 ngày làm việc.</div>
+              <button class="btn" type="submit">Gửi yêu cầu</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="foot-logo">
+          <div class="logo" aria-hidden="true"></div>
+          <span>PowerTrans</span>
+        </div>
+        <p>Kiến tạo giải pháp điện mặt trời công nghệ cao, đáng tin cậy và bền vững cho Việt Nam.</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px; color:#fff">Liên kết</h4>
+        <p><a href="#about">Về chúng tôi</a></p>
+        <p><a href="#solutions">Giải pháp</a></p>
+        <p><a href="#milestones">Cột mốc</a></p>
+        <p><a href="#projects">Dự án</a></p>
+        <p><a href="#contact">Liên hệ</a></p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px; color:#fff">Thông tin</h4>
+        <p>121Bis Nguyễn Văn Trỗi, P.11, Q.Phú Nhuận, TP.HCM</p>
+        <p>MST: 0315871748</p>
+        <p>Điện thoại: (+84) 900 000 000</p>
+        <p>Email: contact@powertrans.vn</p>
+      </div>
+    </div>
+    <div class="bottom">© <span id="year"></span> Power Trans Company Limited. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    // Utility
+    const $ = (sel, ctx=document)=>ctx.querySelector(sel);
+    const $$ = (sel, ctx=document)=>Array.from(ctx.querySelectorAll(sel));
+    function scrollToId(id){ const el = document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); }
+
+    // Header solid on scroll
+    const header = $('#header');
+    const onScrollHeader = ()=> {
+      if(window.scrollY > 80) header.classList.add('solid');
+      else header.classList.remove('solid');
+    };
+    window.addEventListener('scroll', onScrollHeader);
+    onScrollHeader();
+
+    // Mobile menu
+    function toggleMenu(){
+      const m = $('#mobileMenu');
+      if(m.style.display === 'none' || !m.style.display) m.style.display = 'flex'; else m.style.display='none';
+    }
+
+    // Tabs
+    function switchTab(which){
+      const isMission = which === 'mission';
+      $('#tab-mission').classList.toggle('active', isMission);
+      $('#tab-vision').classList.toggle('active', !isMission);
+      $('#panel-mission').classList.toggle('active', isMission);
+      $('#panel-vision').classList.toggle('active', !isMission);
+      $('#tab-mission').setAttribute('aria-selected', isMission ? 'true':'false');
+      $('#tab-vision').setAttribute('aria-selected', !isMission ? 'true':'false');
+    }
+
+    // Reveal on scroll (IntersectionObserver)
+    const revealEls = $$('.reveal');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('show');
+          io.unobserve(e.target);
+        }
+      })
+    }, {threshold:.14});
+    revealEls.forEach(el=>io.observe(el));
+
+    // Counters on visibility
+    const counters = $$('.counter');
+    function animateCounter(el){
+      const to = parseFloat(el.dataset.to || '0');
+      const dur = 1600; // ms
+      const start = performance.now();
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const decimals = (el.dataset.decimals ? parseInt(el.dataset.decimals) : 0);
+      function tick(now){
+        const p = Math.min(1, (now - start)/dur);
+        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+        const val = (to * eased);
+        el.textContent = prefix + val.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + suffix;
+        if(p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    const ioCount = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          animateCounter(e.target);
+          ioCount.unobserve(e.target);
+        }
+      });
+    }, {threshold:.35});
+    counters.forEach(c=>ioCount.observe(c));
+
+    // Pause partners carousel on hover (accessibility)
+    const track = $('#logoTrack');
+    if(track){
+      track.addEventListener('mouseenter', ()=> track.style.animationPlayState = 'paused');
+      track.addEventListener('mouseleave', ()=> track.style.animationPlayState = 'running');
+    }
+
+    // Contact form demo handler
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form).entries());
+      const note = $('#formNote');
+      if(!data.name || !data.email || !data.message){
+        note.textContent = 'Vui lòng điền đầy đủ Họ và tên, Email và Nội dung.';
+        note.style.color = '#ffd1d1';
+        return;
+      }
+      note.textContent = 'Đã gửi thành công! Chúng tôi sẽ liên hệ sớm.';
+      note.style.color = '#6ee39a';
+      form.reset();
+    }
+
+    // Accessibility: focus ring
+    const focusables = 'a, button, input, textarea, [tabindex]:not([tabindex="-1"])';
+    $$(focusables).forEach(el=>{
+      el.addEventListener('focus', ()=> el.style.outline='2px solid #2ECC71');
+      el.addEventListener('blur', ()=> el.style.outline='none');
+    });
+
+    // Year
+    $('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
