@@ -122,19 +122,13 @@ section {
   letter-spacing: 0.3px;
 }
 .logo {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 210deg,
-    #ffd54d,
-    #ffcc00,
-    #2ecc71 62%,
-    #0a2540 92%,
-    #0a2540
-  );
+  width: 60px;
+  height: 40px;
+  background-image: url('Picture1.png');
+  background-size: cover;
   position: relative;
-  box-shadow: inset 0 0 0 3px #ffffffaa, 0 8px 18px rgba(10, 37, 64, 0.18);
+  
+
 }
 .nav-links {
   margin-left: auto;
@@ -257,12 +251,6 @@ section {
   gap: 18px;
 }
 .card {
-  background: linear-gradient(
-  135deg,         /* 0,0 → 1,1 nghĩa là chéo từ trên trái sang dưới phải */
-  #0A2540 0%,
-  #123a64 60%,
-  #2ECC71 100%
-);
   /*background: var(--card);*/
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
@@ -271,10 +259,36 @@ section {
   overflow: hidden;
   transition: transform 0.22s ease, box-shadow 0.25s ease;
 }
+.thunhat {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('solar.jpg');
+  opacity: 0.9;
+  background-size: cover;
+  backdrop-filter: saturate(130%) brightness(0.5)
+}
+.thuhai {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('pexels-kindelmedia-9799712.jpg');
+  opacity: 0.9;
+  background-size: cover;
+}
+.thuba {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('pexels-cristian-rojas-8853507.jpg');
+  opacity: 0.9;
+  background-size: cover;
+}
+.thutu {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('im4.jpg');
+  opacity: 0.9;
+  background-size: cover;
+}
+
 .count {
   font-size: 26px;
   font-weight: 900;
-  color: #ffffff; /* Thay đổi màu chữ thành trắng */
+  color: black; /* Thay đổi màu chữ thành trắng */
   margin-bottom: 6px;
 }
 
@@ -343,6 +357,31 @@ section {
   box-shadow: var(--shadow-md);
   transform: translateY(6px);
 }
+.card1 {
+  background: linear-gradient(
+  135deg,         /* 0,0 → 1,1 nghĩa là chéo từ trên trái sang dưới phải */
+  #0A2540 0%,
+  #123a64 60%,
+  #2ECC71 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.25s ease;
+}
+.card1 h3 {
+  font-size: 18px; /* Đảm bảo kích thước tiêu đề, thêm nếu chưa có */
+  font-weight: 700;
+  color: #ffffff; /* Thay đổi màu tiêu đề thành trắng */
+  margin: 0 0 10px;
+}
+
+.card1 p {
+  font-size: 14px;
+  color: #ffffff; /* Thay đổi màu đoạn văn thành trắng */
+  margin: 0;
+}
 .about-float {
   position:static;
   right: -24px;
@@ -366,7 +405,7 @@ section {
   background: #fff;
   color: #0e2d4b;
   font-size: 20;
-  font-weight: 790;
+  font-weight: 800;
   cursor: pointer;
   transition: all 0.2s ease;
   
@@ -510,7 +549,7 @@ section {
 }
 .cover4 {
   background-image: url('img4.png');
-  background-size: contain;       /* cho ảnh phủ kín khung */
+  background-size: cover;       /* cho ảnh phủ kín khung */
   background-position: center;  /* canh giữa ảnh */
   background-repeat: no-repeat; /* không lặp ảnh */
   width: 100%;
@@ -595,14 +634,14 @@ section {
   gap: 34px;
   align-items: center;
   padding: 18px 18px;
-  animation: logos 26s linear infinite;
+  animation: logos 14s linear infinite;
 }
 @keyframes logos {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-200%);
   }
 }
 .logo-card {
@@ -697,6 +736,13 @@ footer {
   gap: 10px;
   font-weight: 900;
   color: #fff;
+}
+.logo1 {
+  width: 150px;
+  height: 90px;
+  background-size: cover;
+  position:sticky;
+  background-image: url('Picture2.png');
 }
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
