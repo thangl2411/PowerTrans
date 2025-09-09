@@ -1,646 +1,1239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Power Trans Company Limited — Shaping the Future of Renewable Energy</title>
-  <meta name="description" content="Power Trans Company Limited: Giải pháp điện mặt trời công nghệ cao, từ tư vấn kỹ thuật đến thi công, O&M và mô hình tài chính linh hoạt.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-  <!-- Header -->
-  <header id="header" class="header">
-    <nav class="nav" aria-label="Main">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <!-- <span>PowerTrans</span> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Power Trans Company Limited — Shaping the Future of Renewable Energy
+    </title>
+    <meta
+      name="description"
+      content="Power Trans Company Limited: Giải pháp điện mặt trời công nghệ cao, từ tư vấn kỹ thuật đến thi công, O&M và mô hình tài chính linh hoạt."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <nav class="nav" aria-label="Main">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <!-- <span>PowerTrans</span> -->
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="btn" onclick="scrollToId('contact')">
+          Request a Quote
+        </button>
+        <button
+          class="btn btn-outline menu-toggle"
+          aria-label="Menu"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+      </nav>
+      <div id="mobileMenu" class="mobile-menu" style="display: none">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#about" onclick="toggleMenu()">About Us</a>
+        <a href="#solutions" onclick="toggleMenu()">Solutions</a>
+        <a href="#milestones" onclick="toggleMenu()">Milestones</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <a href="#contact" class="btn" onclick="toggleMenu()"
+          >Request a Quote</a
+        >
       </div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#milestones">Milestones</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <button class="btn" onclick="scrollToId('contact')">Request a Quote</button>
-      <button class="btn btn-outline menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
-    </nav>
-    <div id="mobileMenu" class="mobile-menu" style="display:none">
-      <a href="#home" onclick="toggleMenu()">Home</a>
-      <a href="#about" onclick="toggleMenu()">About Us</a>
-      <a href="#solutions" onclick="toggleMenu()">Solutions</a>
-      <a href="#milestones" onclick="toggleMenu()">Milestones</a>
-      <a href="#projects" onclick="toggleMenu()">Projects</a>
-      <a href="#contact" onclick="toggleMenu()">Contact</a>
-      <a href="#contact" class="btn" onclick="toggleMenu()">Request a Quote</a>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <video autoplay muted loop playsinline preload="auto" poster=""
-      aria-label="Phim nền cánh đồng điện mặt trời">
-      <source src="video - Made with Clipchamp.mp4" type="video/mp4">
-    </video>
-    <div class="overlay"></div>
-    <div class="hero-inner">
-      <div class="reveal">
-        <h1>Shaping the Future of Renewable Energy</h1>
-        <p class="lead">We integrate cutting-edge technology and engineering excellence to power a sustainable tomorrow</p>
-        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px">
-          <button class="btn" onclick="scrollToId('solutions')">Discover Our Impact</button>
-          <a class="btn btn-outline" href="#projects">View Projects</a>
-        </div>
-        <div class="kpis" style="margin-top:20px">
-          <div class="kpi">
-            <div class="num counter" data-to="10" data-suffix="+">0</div>
-            <div class="lbl">Years of EPC & O&M Experience</div>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster=""
+        aria-label="Phim nền cánh đồng điện mặt trời"
+      >
+        <source src="video - Made with Clipchamp.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-inner">
+        <div class="reveal">
+          <h1>Shaping the Future of Renewable Energy</h1>
+          <p class="lead">
+            We integrate cutting-edge technology and engineering excellence to
+            power a sustainable tomorrow
+          </p>
+          <div
+            style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px"
+          >
+            <button class="btn" onclick="scrollToId('solutions')">
+              Discover Our Impact
+            </button>
+            <a class="btn btn-outline" href="#projects">View Projects</a>
           </div>
-          <div class="kpi">
-            <div class="num counter" data-to="50" data-prefix=">" data-suffix=" MWp">0</div>
-            <div class="lbl">Supplied Equipment</div>
-          </div>
-          <div class="kpi">
-            <div class="num counter" data-to="20" data-suffix="+">0</div>
-            <div class="lbl">Completed Projects (~15 MW)</div>
-          </div>
-        </div>
-      </div>
-      <div class="glass reveal">
-        <h3 style="margin:0 0 6px; color:var(--blue)">Power Trans Company Limited</h3>
-        <p style="color:#41546b">Slogan: Shaping the Future of Renewable Energy</p>
-        <ul style="padding-left:18px; margin:10px 0 0">
-          <li><strong>Vision:</strong> Leading innovation, creating a sustainable legacy</li>
-          <li><strong>Mission:</strong> Delivering renewable products & services beyond standards</li>
-          <li><strong>Core Values:</strong> Trust • Quality • Service</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="why">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="reveal">Why Choose Power Trans?</h2>
-        <span class="sub reveal">Your Trusted Partner in Solar Energy</span>
-      </div>
-      <div class="grid-4">
-        <div class="card thunhat">
-          <div class="line-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
-              <path d="M3 12h18M12 3v18" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div class="count counter" data-to="30" data-suffix="%+">0</div>
-          <h3>Optimized Solutions</h3>
-          <p class="muted">Low CAPEX, maximizing IRR & payback period</p>
-        </div>
-        <div class="card thuhai">
-          <div class="line-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
-              <path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div class="count counter" data-to="100" data-suffix="%">0</div>
-          <h3>Guaranteed Quality</h3>
-          <p class="muted">Premium equipment with warranty & performance commitment</p>
-        </div>
-        <div class="card thuba">
-          <div class="line-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
-              <path d="M4 20V8l8-5 8 5v12" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 3v17" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="count counter" data-to="10" data-suffix="+">0</div>
-          <h3>Technical Expertise</h3>
-          <p class="muted">Skilled engineering and construction teams</p>
-        </div>
-        <div class="card thutu">
-          <div class="line-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2">
-              <rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/>
-            </svg>
-          </div>
-          <div class="count counter" data-to="30" data-suffix="%+">0</div>
-          <h3>Financial Support</h3>
-          <p class="muted">Bank partnerships; capital from 30%, flexible PPA options</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="reveal">Pioneering Vietnam's Clean Energy Revolution</h2>
-        <span class="sub reveal">About Power Trans</span>
-      </div>
-      <div class="about-grid">
-        <div class="about-img-wrap reveal" style="order:1">
-          <div class="about-img">
-            <img src="ceo_LE_upscale_strong_enhance_faces_x4.jpg">
-          </div>
-          <div class="about-float">
-            <strong>Le Gia Huan</strong><br/>
-            Founder & CEO
+          <div class="kpis" style="margin-top: 20px">
+            <div class="kpi">
+              <div class="num counter" data-to="10" data-suffix="+">0</div>
+              <div class="lbl">Years of EPC & O&M Experience</div>
+            </div>
+            <div class="kpi">
+              <div
+                class="num counter"
+                data-to="50"
+                data-prefix=">"
+                data-suffix=" MWp"
+              >
+                0
+              </div>
+              <div class="lbl">Supplied Equipment</div>
+            </div>
+            <div class="kpi">
+              <div class="num counter" data-to="20" data-suffix="+">0</div>
+              <div class="lbl">Completed Projects (~15 MW)</div>
+            </div>
           </div>
         </div>
-        <div class="reveal" style="order:2">
-          <p><strong>Power Trans Company Limited</strong> is a trusted name in Vietnam’s solar energy industry, backed by a team of highly experienced electrical and construction engineers. We collaborate with global brands to ensure the highest quality:</p>
-          <ul style="padding-left:18px">
-            <li>Solar Panels: Jinko, Trina, Risen</li>
-            <li>Inverter: Sungrow, Huawei, SolarEdge, Sunways</li>
-            <li>Structures & Accessories: Schletter, Austdoor, Holcom</li>
+        <div class="glass reveal">
+          <h3 style="margin: 0 0 6px; color: var(--blue)">
+            Power Trans Company Limited
+          </h3>
+          <p style="color: #41546b">
+            Slogan: Shaping the Future of Renewable Energy
+          </p>
+          <ul style="padding-left: 18px; margin: 10px 0 0">
+            <li>
+              <strong>Vision:</strong> Leading innovation, creating a
+              sustainable legacy
+            </li>
+            <li>
+              <strong>Mission:</strong> Delivering renewable products & services
+              beyond standards
+            </li>
+            <li><strong>Core Values:</strong> Trust • Quality • Service</li>
           </ul>
-          <div class="card1" style="margin-top:10px">
-            <h3>Message from the Founder</h3>
-            <p>“As the Founder of Power Trans Company Limited, I am honored to share my vision for a brighter and more sustainable future... Together, we can harness the infinite power of the sun to create a cleaner, greener tomorrow. Let us join hands to build a world where sustainable energy is accessible to all.”</p>
-            <p><em>— Le Gia Huan, Founder & CEO</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Why Choose Power Trans?</h2>
+          <span class="sub reveal">Your Trusted Partner in Solar Energy</span>
+        </div>
+        <div class="grid-4">
+          <div class="card thunhat">
+            <div class="line-icon">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <path
+                  d="M3 12h18M12 3v18"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="count counter" data-to="30" data-suffix="%+">0</div>
+            <h3>Optimized Solutions</h3>
+            <p class="muted">Low CAPEX, maximizing IRR & payback period</p>
           </div>
-          <div class="tabs" role="tablist" aria-label="Mission and Vision">
-            <button class="tab-btn active" id="tab-mission" aria-controls="panel-mission" aria-selected="true" onclick="switchTab('mission')">Mission</button>
-            <button class="tab-btn " id="tab-vision" aria-controls="panel-vision" aria-selected="false" onclick="switchTab('vision')">Vision</button>
+          <div class="card thuhai">
+            <div class="line-icon">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="count counter" data-to="100" data-suffix="%">0</div>
+            <h3>Guaranteed Quality</h3>
+            <p class="muted">
+              Premium equipment with warranty & performance commitment
+            </p>
           </div>
-          <div id="panel-mission" class="tab-panel active" role="tabpanel" aria-labelledby="tab-mission">
-            <ul>
-              <li>Deliver cutting-edge renewable energy products & services beyond industry standards</li>
-              <li>Reduce emissions and combat climate change through sustainable solutions</li>
-              <li>Build long-term partnerships founded on trust, quality, and reliability</li>
-              <li>Empower communities & expand access to clean energy</li>
+          <div class="card thuba">
+            <div class="line-icon">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 20V8l8-5 8 5v12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M12 3v17" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="count counter" data-to="10" data-suffix="+">0</div>
+            <h3>Technical Expertise</h3>
+            <p class="muted">Skilled engineering and construction teams</p>
+          </div>
+          <div class="card thutu">
+            <div class="line-icon">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="12" rx="2" />
+                <path d="M2 20h20" />
+              </svg>
+            </div>
+            <div class="count counter" data-to="30" data-suffix="%+">0</div>
+            <h3>Financial Support</h3>
+            <p class="muted">
+              Bank partnerships; capital from 30%, flexible PPA options
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Pioneering Vietnam's Clean Energy Revolution</h2>
+          <span class="sub reveal">About Power Trans</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-img-wrap reveal" style="order: 1">
+            <div class="about-img">
+              <img src="ceo_LE_upscale_strong_enhance_faces_x4.jpg" />
+            </div>
+            <div class="about-float">
+              <strong>Le Gia Huan</strong><br />
+              Founder & CEO
+            </div>
+          </div>
+          <div class="reveal" style="order: 2">
+            <p>
+              <strong>Power Trans Company Limited</strong> is a trusted name in
+              Vietnam’s solar energy industry, backed by a team of highly
+              experienced electrical and construction engineers. We collaborate
+              with global brands to ensure the highest quality:
+            </p>
+            <ul style="padding-left: 18px">
+              <li>Solar Panels: Jinko, Trina, Risen</li>
+              <li>Inverter: Sungrow, Huawei, SolarEdge, Sunways</li>
+              <li>Structures & Accessories: Schletter, Austdoor, Holcom</li>
             </ul>
-          </div>
-          <div id="panel-vision" class="tab-panel" role="tabpanel" aria-labelledby="tab-vision">
-            <ul>
-              <li>Leading innovation, advancing solar technology</li>
-              <li>Pioneering corporate responsibility & environmental protection</li>
-              <li>Inspiring a global shift toward sustainability</li>
-              <li>Creating a positive legacy for future generations</li>
-            </ul>
+            <div class="card1" style="margin-top: 10px">
+              <h3>Message from the Founder</h3>
+              <p>
+                “As the Founder of Power Trans Company Limited, I am honored to
+                share my vision for a brighter and more sustainable future...
+                Together, we can harness the infinite power of the sun to create
+                a cleaner, greener tomorrow. Let us join hands to build a world
+                where sustainable energy is accessible to all.”
+              </p>
+              <p><em>— Le Gia Huan, Founder & CEO</em></p>
+            </div>
+            <div class="tabs" role="tablist" aria-label="Mission and Vision">
+              <button
+                class="tab-btn active"
+                id="tab-mission"
+                aria-controls="panel-mission"
+                aria-selected="true"
+                onclick="switchTab('mission')"
+              >
+                Mission
+              </button>
+              <button
+                class="tab-btn"
+                id="tab-vision"
+                aria-controls="panel-vision"
+                aria-selected="false"
+                onclick="switchTab('vision')"
+              >
+                Vision
+              </button>
+            </div>
+            <div
+              id="panel-mission"
+              class="tab-panel active"
+              role="tabpanel"
+              aria-labelledby="tab-mission"
+            >
+              <ul>
+                <li>
+                  Deliver cutting-edge renewable energy products & services
+                  beyond industry standards
+                </li>
+                <li>
+                  Reduce emissions and combat climate change through sustainable
+                  solutions
+                </li>
+                <li>
+                  Build long-term partnerships founded on trust, quality, and
+                  reliability
+                </li>
+                <li>Empower communities & expand access to clean energy</li>
+              </ul>
+            </div>
+            <div
+              id="panel-vision"
+              class="tab-panel"
+              role="tabpanel"
+              aria-labelledby="tab-vision"
+            >
+              <ul>
+                <li>Leading innovation, advancing solar technology</li>
+                <li>
+                  Pioneering corporate responsibility & environmental protection
+                </li>
+                <li>Inspiring a global shift toward sustainability</li>
+                <li>Creating a positive legacy for future generations</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Milestones -->
-  <section id="milestones" class="milestones">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="reveal">Our Journey of Growth & Impact</h2>
-        <span class="sub reveal">Milestones of Development</span>
+    <!-- Milestones -->
+    <section id="milestones" class="milestones">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Our Journey of Growth & Impact</h2>
+          <span class="sub reveal">Milestones of Development</span>
+        </div>
+        <div class="timeline">
+          <div class="mile reveal">
+            <div class="dot"></div>
+            <div class="year">2019–2020</div>
+            <div class="big">
+              <span
+                class="counter"
+                data-to="50"
+                data-prefix="> "
+                data-suffix=" MWp"
+                >0</span
+              >
+              of solar panels & inverters are supplied
+            </div>
+            <div class="muted">
+              Completed > 20 projects with a total capacity of ~15 MW
+            </div>
+          </div>
+          <div class="mile reveal">
+            <div class="dot"></div>
+            <div class="year">2020 – Nay</div>
+            <div class="big">
+              Achieved revenue of ~
+              <span class="counter" data-to="20" data-suffix=" million USD"
+                >0</span
+              >
+              (equipment)
+            </div>
+            <div class="muted">
+              Launched OEM inverters for the residential segment
+            </div>
+          </div>
+          <div class="mile reveal">
+            <div class="dot"></div>
+            <div class="year">2021 – 2022</div>
+            <div class="big">
+              Additional growth of ~
+              <span class="counter" data-to="40" data-suffix=" million USD"
+                >0</span
+              >
+              (Trading & EPC)
+            </div>
+            <div class="muted">
+              Expanded portfolio of international partnerships
+            </div>
+          </div>
+          <div class="mile reveal">
+            <div class="dot"></div>
+            <div class="year">2023 – 2025</div>
+            <div class="big">
+              Targeting
+              <span class="counter" data-to="10" data-suffix="%">0</span> market
+              share in residential inverters
+            </div>
+            <div class="muted">Annual sales target of 20 MW solar panels</div>
+          </div>
+        </div>
       </div>
-      <div class="timeline">
-        <div class="mile reveal">
-          <div class="dot"></div>
-          <div class="year">2019–2020</div>
-          <div class="big"><span class="counter" data-to="50" data-prefix="> " data-suffix=" MWp">0</span> of solar panels & inverters are supplied</div>
-          <div class="muted">Completed > 20 projects with a total capacity of ~15 MW</div>
-        </div>
-        <div class="mile reveal">
-          <div class="dot"></div>
-          <div class="year">2020 – Nay</div>
-          <div class="big">Achieved revenue of ~ <span class="counter" data-to="20" data-suffix=" million USD">0</span> (equipment)</div>
-          <div class="muted">Launched OEM inverters for the residential segment</div>
-        </div>
-        <div class="mile reveal">
-          <div class="dot"></div>
-          <div class="year">2021 – 2022</div>
-          <div class="big">Additional growth of ~ <span class="counter" data-to="40" data-suffix=" million USD">0</span> (Trading & EPC)</div>
-          <div class="muted">Expanded portfolio of international partnerships</div>
-        </div>
-        <div class="mile reveal">
-          <div class="dot"></div>
-          <div class="year">2023 – 2025</div>
-          <div class="big">Targeting <span class="counter" data-to="10" data-suffix="%">0</span> market share in residential inverters</div>
-          <div class="muted">Annual sales target of 20 MW solar panels</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Solutions -->
-  <section id="solutions" class="solutions">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="reveal">Advanced Engineering, End-to-End Solutions</h2>
-        <span class="sub reveal">Comprehensive Solar Energy Services</span>
+    <!-- Solutions -->
+    <section id="solutions" class="solutions">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Advanced Engineering, End-to-End Solutions</h2>
+          <span class="sub reveal">Comprehensive Solar Energy Services</span>
+        </div>
+        <div class="grid-4">
+          <div class="card solution reveal">
+            <div class="cover1"></div>
+            <div class="body">
+              <h3 class="title">Engineering & Consulting</h3>
+              <p>
+                Site surveys, PVsyst simulations, and tailored
+                technical–financial optimization for each project
+              </p>
+            </div>
+            <div class="more">
+              <a class="link" href="#contact"
+                >Learn More
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2ECC71"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M5 12h14M13 5l7 7-7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card solution reveal">
+            <div class="cover2"></div>
+            <div class="body">
+              <h3 class="title">Construction & Installation</h3>
+              <p>
+                Safe and aesthetic execution, compliant with international
+                standards, ensuring long-term operational efficiency
+              </p>
+            </div>
+            <div class="more">
+              <a class="link" href="#contact"
+                >Learn More
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2ECC71"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M5 12h14M13 5l7 7-7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card solution reveal">
+            <div class="cover3"></div>
+            <div class="body">
+              <h3 class="title">Operation & Maintenance</h3>
+              <p>
+                AI-powered real-time monitoring, periodic maintenance, and
+                reliable after-sales services
+              </p>
+            </div>
+            <div class="more">
+              <a class="link" href="#contact"
+                >Learn More
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2ECC71"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M5 12h14M13 5l7 7-7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card solution reveal">
+            <div class="cover4"></div>
+            <div class="body">
+              <h3 class="title">Financial Models</h3>
+              <p>
+                Ownership from 30% equity or PPA; electricity costs lower than
+                EVN, enabling long-term savings
+              </p>
+            </div>
+            <div class="more">
+              <a class="link" href="#contact"
+                >Learn More
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2ECC71"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M5 12h14M13 5l7 7-7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card1 reveal" style="margin-top: 22px; color: white">
+          <strong>Financial Partners:</strong> Collaboration with banks &
+          investment funds; flexible financing support from 30%.
+        </div>
       </div>
-      <div class="grid-4">
-        <div class="card solution reveal">
-          <div class="cover1">
-           </div>
-          <div class="body">
-            <h3 class="title">Engineering & Consulting</h3>
-            <p>Site surveys, PVsyst simulations, and tailored technical–financial optimization for each project</p>
-          </div>
-          <div class="more">
-            <a class="link" href="#contact">Learn More
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="card solution reveal">
-          <div class="cover2" >
-          </div>
-          <div class="body">
-            <h3 class="title">Construction & Installation</h3>
-            <p>Safe and aesthetic execution, compliant with international standards, ensuring long-term operational efficiency</p>
-          </div>
-          <div class="more">
-            <a class="link" href="#contact">Learn More
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="card solution reveal">
-          <div class="cover3"></div>
-          <div class="body">
-            <h3 class="title">Operation & Maintenance</h3>
-            <p>AI-powered real-time monitoring, periodic maintenance, and reliable after-sales services</p>
-          </div>
-          <div class="more">
-            <a class="link" href="#contact">Learn More
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="card solution reveal">
-          <div class="cover4" ></div>
-          <div class="body">
-            <h3 class="title">Financial Models</h3>
-            <p>Ownership from 30% equity or PPA; electricity costs lower than EVN, enabling long-term savings</p>
-          </div>
-          <div class="more">
-            <a class="link" href="#contact">Learn More
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card reveal" style="margin-top:22px; color: white">
-        <strong>Financial Partners:</strong> Collaboration with banks & investment funds; flexible financing support from 30%.
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="reveal">Proven Success in the Field</h2>
-        <span class="sub reveal">Our Project Showcase</span>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Proven Success in the Field</h2>
+          <span class="sub reveal">Our Project Showcase</span>
+        </div>
+        <div class="grid-3">
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar White Feathers" src="feathers.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar White Feathers</div>
+                  <div class="pill" style="margin: 6px 0 8px">1,610.5 kWp</div>
+                  <div style="font-size: 13px">
+                    Risen 550 Wp • Huawei 100 kW
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar Hong Ha" src="hong_ha.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar Hong Ha</div>
+                  <div class="pill" style="margin: 6px 0 8px">1,032 kWp</div>
+                  <div style="font-size: 13px">Jinko 400 Wp • SMA 75 kW</div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar Hung Long" src="hung_long.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar Hung Long</div>
+                  <div class="pill" style="margin: 6px 0 8px">675 kWp</div>
+                  <div style="font-size: 13px">
+                    Jinko 400 Wp • Sungrow 110 kW
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar Compotech" src="compotech.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar Compotech</div>
+                  <div class="pill" style="margin: 6px 0 8px">217 kWp</div>
+                  <div style="font-size: 13px">
+                    Jinko 400 Wp • Huawei 100 kW
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar Phu Hoang" src="phu_hoang.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar Phu Hoang</div>
+                  <div class="pill" style="margin: 6px 0 8px">1,009 kWp</div>
+                  <div style="font-size: 13px">
+                    Trina 455 Wp • Sungrow 110 kW
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar Nhơn Trạch" src="nhon_trach.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar Nhon Trach</div>
+                  <div class="pill" style="margin: 6px 0 8px">450 kWp</div>
+                  <div style="font-size: 13px"></div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar An Việt" src="an_viet.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar An Viet</div>
+                  <div class="pill" style="margin: 6px 0 8px">800 kWp</div>
+                  <div style="font-size: 13px"></div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card project reveal">
+            <div class="thumb">
+              <img alt="Solar Đồng Pháp" src="dong_phat.png" />
+              <div class="overlay">
+                <div class="meta">
+                  <div style="font-weight: 900">Solar Đong Phap</div>
+                  <div class="pill" style="margin: 6px 0 8px">2000 kWp</div>
+                  <div style="font-size: 13px"></div>
+                  <div style="margin-top: 10px">
+                    <a class="btn" href="#contact">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Partners -->
+        <div class="section-head" style="margin-top: 54px">
+          <h2 class="reveal">Powered by the World's Most Trusted Brands</h2>
+          <span class="sub reveal">Strategic Partners</span>
+        </div>
+        <div class="carousel reveal" aria-label="Đối tác">
+          <div class="track" id="logoTrack">
+            <!-- set A -->
+            <div class="logo-card" aria-label="Jinko">
+              <a
+                href="https://www.jinkosolar.com/en/site/tigerneo_3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="logo-svg" viewBox="0 0 200 40">
+                  <text
+                    x="0"
+                    y="28"
+                    font-size="26"
+                    font-weight="900"
+                    fill="#0b7a39"
+                  >
+                    Jinko
+                  </text>
+                </svg>
+              </a>
+            </div>
+            <div class="logo-card" aria-label="Trina">
+              <a
+                href="https://www.trinasolar.com/en-glb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="logo-svg" viewBox="0 0 200 40">
+                  <text
+                    x="0"
+                    y="28"
+                    font-size="26"
+                    font-weight="900"
+                    fill="#0a6cc2"
+                  >
+                    Trina
+                  </text>
+                </svg>
+              </a>
+            </div>
+            <div class="logo-card" aria-label="Risen">
+              <a
+                href="https://en.risen.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="logo-svg" viewBox="0 0 200 40">
+                  <text
+                    x="0"
+                    y="28"
+                    font-size="26"
+                    font-weight="900"
+                    fill="#f6b500"
+                  >
+                    Risen
+                  </text>
+                </svg>
+              </a>
+            </div>
+            <div class="logo-card" aria-label="Sungrow">
+              <a
+                href="https://en.sungrowpower.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="logo-svg" viewBox="0 0 200 40">
+                  <text
+                    x="0"
+                    y="28"
+                    font-size="24"
+                    font-weight="900"
+                    fill="#f36c21"
+                  >
+                    Sungrow
+                  </text>
+                </svg>
+              </a>
+            </div>
+            <div class="logo-card" aria-label="Huawei">
+              <a
+                href="https://solar.huawei.com/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="logo-svg" viewBox="0 0 200 40">
+                  <text
+                    x="0"
+                    y="28"
+                    font-size="24"
+                    font-weight="900"
+                    fill="#d81b60"
+                  >
+                    Huawei
+                  </text>
+                </svg>
+              </a>
+            </div>
+            <div class="logo-card" aria-label="SolarEdge">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text x="0" y="28" font-size="22" font-weight="900" fill="#111">
+                  SolarEdge
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Sunways">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="24"
+                  font-weight="900"
+                  fill="#f57c00"
+                >
+                  Sunways
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Schletter">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="22"
+                  font-weight="900"
+                  fill="#0d47a1"
+                >
+                  Schletter
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Austdoor">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="22"
+                  font-weight="900"
+                  fill="#1976d2"
+                >
+                  Austdoor
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Holcom">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="22"
+                  font-weight="900"
+                  fill="#2e7d32"
+                >
+                  Holcom
+                </text>
+              </svg>
+            </div>
+            <!-- set B duplicate -->
+            <div class="logo-card" aria-label="Jinko">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="26"
+                  font-weight="900"
+                  fill="#0b7a39"
+                >
+                  Jinko
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Trina">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="26"
+                  font-weight="900"
+                  fill="#0a6cc2"
+                >
+                  Trina
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Risen">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="26"
+                  font-weight="900"
+                  fill="#f6b500"
+                >
+                  Risen
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Sungrow">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="24"
+                  font-weight="900"
+                  fill="#f36c21"
+                >
+                  Sungrow
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Huawei">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="24"
+                  font-weight="900"
+                  fill="#d81b60"
+                >
+                  Huawei
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="SolarEdge">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text x="0" y="28" font-size="22" font-weight="900" fill="#111">
+                  SolarEdge
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Sunways">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="24"
+                  font-weight="900"
+                  fill="#f57c00"
+                >
+                  Sunways
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Schletter">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="22"
+                  font-weight="900"
+                  fill="#0d47a1"
+                >
+                  Schletter
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Austdoor">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="22"
+                  font-weight="900"
+                  fill="#1976d2"
+                >
+                  Austdoor
+                </text>
+              </svg>
+            </div>
+            <div class="logo-card" aria-label="Holcom">
+              <svg class="logo-svg" viewBox="0 0 200 40">
+                <text
+                  x="0"
+                  y="28"
+                  font-size="22"
+                  font-weight="900"
+                  fill="#2e7d32"
+                >
+                  Holcom
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="grid-3">
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar White Feathers" src="feathers.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar White Feathers</div>
-                <div class="pill" style="margin:6px 0 8px">1,610.5 kWp</div>
-                <div style="font-size:13px">Risen 550 Wp • Huawei 100 kW</div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
-              </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div
+            class="reveal"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              justify-content: center;
+            "
+          >
+            <h2 style="color: #fff">Let's Build a Greener Future Together</h2>
+            <p>
+              Power Trans accompanies businesses and communities on the journey
+              toward clean energy transition, with cutting-edge technology and
+              dedicated services.
+            </p>
+            <div>
+              <p>
+                <strong>Address:</strong> 121Bis Nguyen Van Troi, Ward 11, Phu
+                Nhuan District, Ho Chi Minh City, Vietnam
+              </p>
+              <p><strong>Tax Code:</strong> 0315871748</p>
+              <p><strong>Phone:</strong> (+84) 900 000 000</p>
+              <p><strong>Email:</strong> contact@powertrans.vn</p>
+            </div>
+            <div style="margin-top: 8px">
+              <button class="btn" onclick="scrollToId('contactForm')">
+                Contact Us
+              </button>
             </div>
           </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar Hong Ha" src="hong_ha.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar Hong Ha</div>
-                <div class="pill" style="margin:6px 0 8px">1,032 kWp</div>
-                <div style="font-size:13px">Jinko 400 Wp • SMA 75 kW</div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+          <div class="card reveal">
+            <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+              <div class="row">
+                <div class="field">
+                  <label for="name">Full Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Nguyen Van A"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Power Trans Co., Ltd."
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="email@company.com"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="090x xxx xxx"
+                  />
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar Hung Long" src="hung_long.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar Hung Long</div>
-                <div class="pill" style="margin:6px 0 8px">675 kWp</div>
-                <div style="font-size:13px">Jinko 400 Wp • Sungrow 110 kW</div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              <div class="field" style="margin-top: 10px">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Requirements, capacity, installation location..."
+                  required
+                ></textarea>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar Compotech" src="compotech.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar Compotech</div>
-                <div class="pill" style="margin:6px 0 8px">217 kWp</div>
-                <div style="font-size:13px">Jinko 400 Wp • Huawei 100 kW</div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 10px;
+                  margin-top: 16px;
+                "
+              >
+                <div id="formNote" style="color: #cfe3f5">
+                  We will respond within 1–2 business days.
+                </div>
+                <button class="btn" type="submit">Submit Request</button>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar Phu Hoang" src="phu_hoang.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar Phu Hoang</div>
-                <div class="pill" style="margin:6px 0 8px">1,009 kWp</div>
-                <div style="font-size:13px">Trina 455 Wp • Sungrow 110 kW</div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar Nhơn Trạch" src="nhon_trach.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar Nhon Trach</div>
-                <div class="pill" style="margin:6px 0 8px">450 kWp</div>
-                <div style="font-size:13px"></div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar An Việt" src="an_viet.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar An Viet</div>
-                <div class="pill" style="margin:6px 0 8px">800 kWp</div>
-                <div style="font-size:13px"></div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card project reveal">
-          <div class="thumb">
-            <img alt="Solar Đồng Pháp" src="dong_phat.png"/>
-            <div class="overlay">
-              <div class="meta">
-                <div style="font-weight:900">Solar Đong Phap</div>
-                <div class="pill" style="margin:6px 0 8px">2000 kWp</div>
-                <div style="font-size:13px"></div>
-                <div style="margin-top:10px"><a class="btn" href="#contact">View Case Study</a></div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-      <!-- Partners -->
-      <div class="section-head" style="margin-top:54px">
-        <h2 class="reveal">Powered by the World's Most Trusted Brands</h2>
-        <span class="sub reveal">Strategic Partners</span>
-      </div>
-      <div class="carousel reveal" aria-label="Đối tác">
-        <div class="track" id="logoTrack">
-          <!-- set A -->
-          <div class="logo-card" aria-label="Jinko">
-            <a href="https://www.jinkosolar.com/en/site/tigerneo_3" target="_blank" rel="noopener noreferrer">
-              <svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0b7a39">Jinko</text></svg>
-            </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="foot-logo">
+            <div class="logo1" aria-hidden="true"></div>
           </div>
-          <div class="logo-card" aria-label="Trina">
-            <a href="https://www.trinasolar.com/en-glb" target="_blank" rel="noopener noreferrer">
-              <svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0a6cc2">Trina</text></svg>
-            </a>
-          </div>
-          <div class="logo-card" aria-label="Risen">
-            <a href="https://en.risen.com/" target="_blank" rel="noopener noreferrer">
-              <svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#f6b500">Risen</text></svg>
-            </a>
-            </div>
-          <div class="logo-card" aria-label="Sungrow">
-            <a href="https://en.sungrowpower.com/" target="_blank" rel="noopener noreferrer">
-              <svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f36c21">Sungrow</text></svg>
-            </a>
-          </div>
-          <div class="logo-card" aria-label="Huawei">
-            <a href="https://solar.huawei.com/en/" target="_blank" rel="noopener noreferrer">
-              <svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#d81b60">Huawei</text></svg>
-            </a>
-          </div>
-          <div class="logo-card" aria-label="SolarEdge"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#111">SolarEdge</text></svg></div>
-          <div class="logo-card" aria-label="Sunways"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f57c00">Sunways</text></svg></div>
-          <div class="logo-card" aria-label="Schletter"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#0d47a1">Schletter</text></svg></div>
-          <div class="logo-card" aria-label="Austdoor"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#1976d2">Austdoor</text></svg></div>
-          <div class="logo-card" aria-label="Holcom"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#2e7d32">Holcom</text></svg></div>
-          <!-- set B duplicate -->
-          <div class="logo-card" aria-label="Jinko"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0b7a39">Jinko</text></svg></div>
-          <div class="logo-card" aria-label="Trina"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#0a6cc2">Trina</text></svg></div>
-          <div class="logo-card" aria-label="Risen"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="26" font-weight="900" fill="#f6b500">Risen</text></svg></div>
-          <div class="logo-card" aria-label="Sungrow"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f36c21">Sungrow</text></svg></div>
-          <div class="logo-card" aria-label="Huawei"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#d81b60">Huawei</text></svg></div>
-          <div class="logo-card" aria-label="SolarEdge"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#111">SolarEdge</text></svg></div>
-          <div class="logo-card" aria-label="Sunways"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="24" font-weight="900" fill="#f57c00">Sunways</text></svg></div>
-          <div class="logo-card" aria-label="Schletter"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#0d47a1">Schletter</text></svg></div>
-          <div class="logo-card" aria-label="Austdoor"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#1976d2">Austdoor</text></svg></div>
-          <div class="logo-card" aria-label="Holcom"><svg class="logo-svg" viewBox="0 0 200 40"><text x="0" y="28" font-size="22" font-weight="900" fill="#2e7d32">Holcom</text></svg></div>
+          <p>
+            Creating high-tech, reliable, and sustainable solar solutions for
+            Vietnam
+          </p>
+        </div>
+        <div>
+          <h4 style="margin: 0 0 8px; color: #fff">Quick Links</h4>
+          <p><a href="#about">About Us</a></p>
+          <p><a href="#solutions">Solutions</a></p>
+          <p><a href="#milestones">Milestones</a></p>
+          <p><a href="#projects">Projects</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <div>
+          <h4 style="margin: 0 0 8px; color: #fff">Information</h4>
+          <p>
+            121Bis Nguyen Van Troi, Ward 11, Phu Nhuan District, Ho Chi Minh
+            City, Vietnam
+          </p>
+          <p>Tax Code: 0315871748</p>
+          <p>Phone: (+84) 900 000 000</p>
+          <p>Email: contact@powertrans.vn</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="reveal" style="display:flex; flex-direction:column; gap:12px; justify-content:center">
-          <h2 style="color:#fff">Let's Build a Greener Future Together</h2>
-          <p>Power Trans accompanies businesses and communities on the journey toward clean energy transition, with cutting-edge technology and dedicated services.</p>
-          <div>
-            <p><strong>Address:</strong> 121Bis Nguyen Van Troi, Ward 11, Phu Nhuan District, Ho Chi Minh City, Vietnam</p>
-            <p><strong>Tax Code:</strong> 0315871748</p>
-            <p><strong>Phone:</strong> (+84) 900 000 000</p>
-            <p><strong>Email:</strong> contact@powertrans.vn</p>
-          </div>
-          <div style="margin-top:8px">
-            <button class="btn" onclick="scrollToId('contactForm')">Contact Us</button>
-          </div>
-        </div>
-        <div class="card reveal">
-          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
-            <div class="row">
-              <div class="field">
-                <label for="name">Full Name</label>
-                <input id="name" name="name" type="text" placeholder="Nguyen Van A" required/>
-              </div>
-              <div class="field">
-                <label for="company">Company</label>
-                <input id="company" name="company" type="text" placeholder="Power Trans Co., Ltd."/>
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="email@company.com" required/>
-              </div>
-              <div class="field">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" placeholder="090x xxx xxx"/>
-              </div>
-            </div>
-            <div class="field" style="margin-top:10px">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Requirements, capacity, installation location..." required></textarea>
-            </div>
-            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:16px">
-              <div id="formNote" style="color:#cfe3f5">We will respond within 1–2 business days.</div>
-              <button class="btn" type="submit">Submit Request</button>
-            </div>
-          </form>
-        </div>
+      <div class="bottom">
+        © <span id="year"></span> Power Trans Company Limited. All Rights
+        Reserved.
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-top">
-      <div>
-        <div class="foot-logo">
-          <div class="logo1" aria-hidden="true"></div>
-          
-        </div>
-        <p>Creating high-tech, reliable, and sustainable solar solutions for Vietnam</p>
-      </div>
-      <div>
-        <h4 style="margin:0 0 8px; color:#fff">Quick Links</h4>
-        <p><a href="#about">About Us</a></p>
-        <p><a href="#solutions">Solutions</a></p>
-        <p><a href="#milestones">Milestones</a></p>
-        <p><a href="#projects">Projects</a></p>
-        <p><a href="#contact">Contact</a></p>
-      </div>
-      <div>
-        <h4 style="margin:0 0 8px; color:#fff">Information</h4>
-        <p>121Bis Nguyen Van Troi, Ward 11, Phu Nhuan District, Ho Chi Minh City, Vietnam</p>
-        <p>Tax Code: 0315871748</p>
-        <p>Phone: (+84) 900 000 000</p>
-        <p>Email: contact@powertrans.vn</p>
-      </div>
-    </div>
-    <div class="bottom">© <span id="year"></span> Power Trans Company Limited. All Rights Reserved.</div>
-  </footer>
-
-  <script>
-    // Utility
-    const $ = (sel, ctx=document)=>ctx.querySelector(sel);
-    const $$ = (sel, ctx=document)=>Array.from(ctx.querySelectorAll(sel));
-    function scrollToId(id){ const el = document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); }
-
-    // Header solid on scroll
-    const header = $('#header');
-    const onScrollHeader = ()=> {
-      if(window.scrollY > 80) header.classList.add('solid');
-      else header.classList.remove('solid');
-    };
-    window.addEventListener('scroll', onScrollHeader);
-    onScrollHeader();
-
-    // Mobile menu
-    function toggleMenu(){
-      const m = $('#mobileMenu');
-      if(m.style.display === 'none' || !m.style.display) m.style.display = 'flex'; else m.style.display='none';
-    }
-
-    // Tabs
-    function switchTab(which){
-      const isMission = which === 'mission';
-      $('#tab-mission').classList.toggle('active', isMission);
-      $('#tab-vision').classList.toggle('active', !isMission);
-      $('#panel-mission').classList.toggle('active', isMission);
-      $('#panel-vision').classList.toggle('active', !isMission);
-      $('#tab-mission').setAttribute('aria-selected', isMission ? 'true':'false');
-      $('#tab-vision').setAttribute('aria-selected', !isMission ? 'true':'false');
-    }
-
-    // Reveal on scroll (IntersectionObserver)
-    const revealEls = $$('.reveal');
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          e.target.classList.add('show');
-          io.unobserve(e.target);
-        }
-      })
-    }, {threshold:.14});
-    revealEls.forEach(el=>io.observe(el));
-
-    // Counters on visibility
-    const counters = $$('.counter');
-    function animateCounter(el){
-      const to = parseFloat(el.dataset.to || '0');
-      const dur = 1600; // ms
-      const start = performance.now();
-      const prefix = el.dataset.prefix || '';
-      const suffix = el.dataset.suffix || '';
-      const decimals = (el.dataset.decimals ? parseInt(el.dataset.decimals) : 0);
-      function tick(now){
-        const p = Math.min(1, (now - start)/dur);
-        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
-        const val = (to * eased);
-        el.textContent = prefix + val.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + suffix;
-        if(p < 1) requestAnimationFrame(tick);
+    <script>
+      // Utility
+      const $ = (sel, ctx = document) => ctx.querySelector(sel);
+      const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+      function scrollToId(id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-      requestAnimationFrame(tick);
-    }
-    const ioCount = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          animateCounter(e.target);
-          ioCount.unobserve(e.target);
+
+      // Header solid on scroll
+      const header = $("#header");
+      const onScrollHeader = () => {
+        if (window.scrollY > 80) header.classList.add("solid");
+        else header.classList.remove("solid");
+      };
+      window.addEventListener("scroll", onScrollHeader);
+      onScrollHeader();
+
+      // Mobile menu
+      function toggleMenu() {
+        const m = $("#mobileMenu");
+        if (m.style.display === "none" || !m.style.display)
+          m.style.display = "flex";
+        else m.style.display = "none";
+      }
+
+      // Tabs
+      function switchTab(which) {
+        const isMission = which === "mission";
+        $("#tab-mission").classList.toggle("active", isMission);
+        $("#tab-vision").classList.toggle("active", !isMission);
+        $("#panel-mission").classList.toggle("active", isMission);
+        $("#panel-vision").classList.toggle("active", !isMission);
+        $("#tab-mission").setAttribute(
+          "aria-selected",
+          isMission ? "true" : "false"
+        );
+        $("#tab-vision").setAttribute(
+          "aria-selected",
+          !isMission ? "true" : "false"
+        );
+      }
+
+      // Reveal on scroll (IntersectionObserver)
+      const revealEls = $$(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("show");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+      revealEls.forEach((el) => io.observe(el));
+
+      // Counters on visibility
+      const counters = $$(".counter");
+      function animateCounter(el) {
+        const to = parseFloat(el.dataset.to || "0");
+        const dur = 1600; // ms
+        const start = performance.now();
+        const prefix = el.dataset.prefix || "";
+        const suffix = el.dataset.suffix || "";
+        const decimals = el.dataset.decimals
+          ? parseInt(el.dataset.decimals)
+          : 0;
+        function tick(now) {
+          const p = Math.min(1, (now - start) / dur);
+          const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+          const val = to * eased;
+          el.textContent =
+            prefix +
+            val.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
+            suffix;
+          if (p < 1) requestAnimationFrame(tick);
         }
+        requestAnimationFrame(tick);
+      }
+      const ioCount = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              animateCounter(e.target);
+              ioCount.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.35 }
+      );
+      counters.forEach((c) => ioCount.observe(c));
+
+      // Pause partners carousel on hover (accessibility)
+      const track = $("#logoTrack");
+      if (track) {
+        track.addEventListener(
+          "mouseenter",
+          () => (track.style.animationPlayState = "paused")
+        );
+        track.addEventListener(
+          "mouseleave",
+          () => (track.style.animationPlayState = "running")
+        );
+      }
+
+      // Contact form demo handler
+      function handleSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = Object.fromEntries(new FormData(form).entries());
+        const note = $("#formNote");
+        if (!data.name || !data.email || !data.message) {
+          note.textContent = "Please fill in Full Name, Email, and Message.";
+          note.style.color = "#ffd1d1";
+          return;
+        }
+        note.textContent =
+          "Submitted successfully! We will contact you shortly.";
+        note.style.color = "#6ee39a";
+        form.reset();
+      }
+
+      // Accessibility: focus ring
+      const focusables =
+        'a, button, input, textarea, [tabindex]:not([tabindex="-1"])';
+      $$(focusables).forEach((el) => {
+        el.addEventListener(
+          "focus",
+          () => (el.style.outline = "2px solid #2ECC71")
+        );
+        el.addEventListener("blur", () => (el.style.outline = "none"));
       });
-    }, {threshold:.35});
-    counters.forEach(c=>ioCount.observe(c));
 
-    // Pause partners carousel on hover (accessibility)
-    const track = $('#logoTrack');
-    if(track){
-      track.addEventListener('mouseenter', ()=> track.style.animationPlayState = 'paused');
-      track.addEventListener('mouseleave', ()=> track.style.animationPlayState = 'running');
-    }
-
-    // Contact form demo handler
-    function handleSubmit(e){
-      e.preventDefault();
-      const form = e.target;
-      const data = Object.fromEntries(new FormData(form).entries());
-      const note = $('#formNote');
-      if(!data.name || !data.email || !data.message){
-        note.textContent = 'Please fill in Full Name, Email, and Message.';
-        note.style.color = '#ffd1d1';
-        return;
-      }
-      note.textContent = 'Submitted successfully! We will contact you shortly.';
-      note.style.color = '#6ee39a';
-      form.reset();
-    }
-
-    // Accessibility: focus ring
-    const focusables = 'a, button, input, textarea, [tabindex]:not([tabindex="-1"])';
-    $$(focusables).forEach(el=>{
-      el.addEventListener('focus', ()=> el.style.outline='2px solid #2ECC71');
-      el.addEventListener('blur', ()=> el.style.outline='none');
-    });
-
-    // Year
-    $('#year').textContent = new Date().getFullYear();
-  </script>
-</body>
+      // Year
+      $("#year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

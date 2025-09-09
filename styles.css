@@ -124,11 +124,9 @@ section {
 .logo {
   width: 60px;
   height: 40px;
-  background-image: url('Picture1.png');
+  background-image: url("Picture1.png");
   background-size: cover;
   position: relative;
-  
-
 }
 .nav-links {
   margin-left: auto;
@@ -260,27 +258,27 @@ section {
   transition: transform 0.22s ease, box-shadow 0.25s ease;
 }
 .thunhat {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('solar.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("solar.jpg");
   opacity: 0.9;
   background-size: cover;
-  backdrop-filter: saturate(130%) brightness(0.5)
+  backdrop-filter: saturate(130%) brightness(0.5);
 }
 .thuhai {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('pexels-kindelmedia-9799712.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("pexels-kindelmedia-9799712.jpg");
   opacity: 0.9;
   background-size: cover;
 }
 .thuba {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('pexels-cristian-rojas-8853507.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("pexels-cristian-rojas-8853507.jpg");
   opacity: 0.9;
   background-size: cover;
 }
 .thutu {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('im4.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("im4.jpg");
   opacity: 0.9;
   background-size: cover;
 }
@@ -288,7 +286,7 @@ section {
 .count {
   font-size: 26px;
   font-weight: 900;
-  color: black; /* Thay đổi màu chữ thành trắng */
+  color: white; /* Thay đổi màu chữ thành trắng */
   margin-bottom: 6px;
 }
 
@@ -359,10 +357,11 @@ section {
 }
 .card1 {
   background: linear-gradient(
-  135deg,         /* 0,0 → 1,1 nghĩa là chéo từ trên trái sang dưới phải */
-  #0A2540 0%,
-  #123a64 60%,
-  #2ECC71 100%);
+    135deg,
+    /* 0,0 → 1,1 nghĩa là chéo từ trên trái sang dưới phải */ #0a2540 0%,
+    #123a64 60%,
+    #2ecc71 100%
+  );
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   padding: 22px;
@@ -383,7 +382,7 @@ section {
   margin: 0;
 }
 .about-float {
-  position:static;
+  position: static;
   right: -24px;
   bottom: -24px;
   background: #fff;
@@ -396,7 +395,6 @@ section {
   gap: 10px;
   flex-wrap: wrap;
   margin: 14px 0 8px;
-  
 }
 .tab-btn {
   padding: 10px 14px;
@@ -408,13 +406,11 @@ section {
   font-weight: 800;
   cursor: pointer;
   transition: all 0.2s ease;
-  
 }
 .tab-btn.active {
   background: var(--blue);
   color: #fff;
   border-color: var(--blue);
- 
 }
 .tab-panel {
   display: none;
@@ -422,7 +418,6 @@ section {
 }
 .tab-panel.active {
   display: block;
-  
 }
 
 /* Milestones */
@@ -524,33 +519,33 @@ section {
   color: #6ee39a;
 }
 .cover1 {
-  background-image:url('img2.jpg');
-  background-size: cover;       /* cho ảnh phủ kín khung */
-  background-position: center;  /* canh giữa ảnh */
+  background-image: url("img2.jpg");
+  background-size: cover; /* cho ảnh phủ kín khung */
+  background-position: center; /* canh giữa ảnh */
   background-repeat: no-repeat; /* không lặp ảnh */
   width: 100%;
   height: 200px; /* hoặc đặt chiều cao mong muốn */
 }
 .cover2 {
-  background-image: url('img1.jpg');
-  background-size: cover;       /* cho ảnh phủ kín khung */
-  background-position: center;  /* canh giữa ảnh */
+  background-image: url("img1.jpg");
+  background-size: cover; /* cho ảnh phủ kín khung */
+  background-position: center; /* canh giữa ảnh */
   background-repeat: no-repeat; /* không lặp ảnh */
   width: 100%;
   height: 200px; /* hoặc đặt chiều cao mong muốn */
 }
 .cover3 {
-  background-image: url('img3.jpg');
-  background-size: cover;       /* cho ảnh phủ kín khung */
-  background-position: center;  /* canh giữa ảnh */
+  background-image: url("img3.jpg");
+  background-size: cover; /* cho ảnh phủ kín khung */
+  background-position: center; /* canh giữa ảnh */
   background-repeat: no-repeat; /* không lặp ảnh */
   width: 100%;
   height: 200px; /* hoặc đặt chiều cao mong muốn */
 }
 .cover4 {
-  background-image: url('img4.png');
-  background-size: cover;       /* cho ảnh phủ kín khung */
-  background-position: center;  /* canh giữa ảnh */
+  background-image: url("img4.png");
+  background-size: cover; /* cho ảnh phủ kín khung */
+  background-position: center; /* canh giữa ảnh */
   background-repeat: no-repeat; /* không lặp ảnh */
   width: 100%;
   height: 200px; /* hoặc đặt chiều cao mong muốn */
@@ -741,8 +736,8 @@ footer {
   width: 150px;
   height: 90px;
   background-size: cover;
-  position:sticky;
-  background-image: url('Picture2.png');
+  position: sticky;
+  background-image: url("Picture2.png");
 }
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
