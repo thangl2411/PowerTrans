@@ -376,8 +376,8 @@ section {
   margin: 0 0 10px;
 }
 
-.card1 p {
-  font-size: 14px;
+.card1 li {
+  font-size: 16px;
   color: #ffffff; /* Thay đổi màu đoạn văn thành trắng */
   margin: 0;
 }
@@ -633,10 +633,10 @@ section {
 }
 @keyframes logos {
   from {
-    transform: translateX(0);
+    transform: translateX(300);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-300%);
   }
 }
 .logo-card {
@@ -754,6 +754,12 @@ footer {
 .reveal.show {
   opacity: 1;
   transform: translateY(0);
+}
+.reveal p {
+  font-size: 19px; /* Đảm bảo kích thước tiêu đề, thêm nếu chưa có */
+  /*font-weight: 700;
+  /*color: #ffffff; /* Thay đổi màu tiêu đề thành trắng */
+  margin: 0 0 10px;
 }
 /* Keyframes for subtle entrance */
 @keyframes fadeIn {
