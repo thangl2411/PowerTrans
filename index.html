@@ -1397,6 +1397,21 @@
 
       // Year
       $("#year").textContent = new Date().getFullYear();
+      
+      // Tracking visitors to the website
+      (function () {
+        const endpoint = "http://powertrans-tracking.vercel.app/api/visit";
+      
+        fetch(endpoint, {
+          method: "POST",
+          keepalive: true,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            path: window.location.pathname,
+            ts: Date.now()
+          })
+        }).catch(() => {});
+      })();
     </script>
   </body>
 </html>
