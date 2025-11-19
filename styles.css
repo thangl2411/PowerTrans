@@ -1066,12 +1066,12 @@ footer {
 }
 form .row {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Mặc định 2 cột */
+  grid-template-columns: 1fr 1fr; 
   gap: 12px;
 }
 
 @media (max-width: 600px) {
   form .row {
-    grid-template-columns: 1fr; /* Trên mobile chuyển thành 1 cột */
+    grid-template-columns: 1fr;
   }
 }
