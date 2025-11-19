@@ -1002,15 +1002,15 @@ footer {
 .brand-icon {
   width: 28px; /* Kích thước vừa vặn cho icon */
   height: 28px;
-  object-fit: contain; /* Đảm bảo icon không bị méo */
+  object-fit: contain;
   display: block;
 }
 .logo-card {
   display: flex !important;
-  justify-content: center !important; /* Căn giữa ngang */
-  align-items: center !important; /* Căn giữa dọc */
-  padding: 12px !important; /* Chừa chút lề cho đẹp */
-  gap: 0 !important; /* Không cần khoảng cách nữa */
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 12px !important;
+  gap: 0 !important;
 
   /* Kích thước khung */
   min-width: 180px; /* Độ rộng khung */
