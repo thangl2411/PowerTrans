@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   /* Font Nunito ưu tiên số 1, nếu lỗi sẽ dùng font hệ thống (system-ui) */
-  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif !important;
 }
 :root {
   --blue: #0a2540; /* Deep Tech Blue */
@@ -24,14 +25,25 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+  font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial;
   color: var(--text);
   background: #fff;
   line-height: 1.65;
 }
-h1, h2, h3, h4, h5, h6, input, textarea, button, select, a, .btn {
-  font-family: 'Nunito', system-ui, sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+button,
+select,
+a,
+.btn {
+  font-family: "Nunito", system-ui, sans-serif !important;
 }
 h1,
 h2,
@@ -636,26 +648,30 @@ section {
   display: flex;
   gap: 34px;
   align-items: center;
-  padding: 18px 18px;
+  padding: 18px;
+  width: max-content;
   animation: logos 14s linear infinite;
 }
 @keyframes logos {
   from {
-    transform: translateX(300);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-300%);
+    transform: translateX(-25%);
   }
 }
-.logo-card {
-  min-width: 160px;
-  height: 80px;
+/*.logo-card {
   border: 1px solid #e6eef5;
   border-radius: 14px;
-  display: grid;
-  place-items: center;
+  display: flex !important; 
+  flex-direction: row !important; 
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  min-width: 240px;
+  height: 90px;
   padding: 10px;
-  filter: grayscale(1) contrast(1.05);
+  filter: none; 
   opacity: 0.9;
   transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
   background: #fff;
@@ -664,11 +680,26 @@ section {
   filter: grayscale(0);
   opacity: 1;
   transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.brand-text {
+  font-size: 20px;
+  font-weight: 800; 
+  line-height: 1.2;
+  text-align: left; 
+  white-space: nowrap; 
+  flex-grow: 0;
+}
+.brand-icon {
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: contain; 
+  display: block;
 }
 .logo-svg {
   width: 120px;
   height: 30px;
-}
+}*/
 /* Contact */
 .contact {
   background: linear-gradient(180deg, #0a2540, #081c31);
@@ -1006,4 +1037,74 @@ footer {
     width: 100%;
     justify-content: center;
   }
+}
+.brand-icon {
+  width: 28px; /* Kích thước vừa vặn cho icon */
+  height: 28px;
+  object-fit: contain; /* Đảm bảo icon không bị méo */
+  display: block;
+}
+.logo-card {
+  display: flex !important;
+  justify-content: center !important; /* Căn giữa ngang */
+  align-items: center !important; /* Căn giữa dọc */
+  padding: 12px !important; /* Chừa chút lề cho đẹp */
+  gap: 0 !important; /* Không cần khoảng cách nữa */
+
+  /* Kích thước khung */
+  min-width: 180px; /* Độ rộng khung */
+  height: 120px; /* Chiều cao khung */
+
+  /* Giữ nguyên trang trí */
+  background: #fff;
+  border: 1px solid #e6eef5;
+  border-radius: 16px;
+
+  /* Màu sắc */
+  filter: none !important;
+  opacity: 1 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Kích thước ảnh */
+.brand-icon {
+  width: 100% !important; /* Chiếm hết chiều ngang khung */
+  height: 100% !important; /* Chiếm hết chiều dọc khung */
+
+  /* QUAN TRỌNG: contain giúp logo to nhất có thể mà KHÔNG bị méo/cắt */
+  object-fit: contain !important;
+
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* Kích thước chữ */
+.brand-text {
+  /*font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1;
+  white-space: nowrap;
+  color: #0a2540;*/
+  display: none !important;
+}
+
+.logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.logo-card a,
+.logo-card a:focus,
+.logo-card a:active,
+.logo-card a:visited {
+  /* Dùng !important để đè lên mọi cài đặt cũ */
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  /* Đảm bảo link chiếm hết diện tích khung để dễ bấm */
+  display: flex !important;
+  width: 200% !important;
+  height: 200% !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
