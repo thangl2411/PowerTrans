@@ -1401,6 +1401,9 @@
       // Tracking visitors to the website
       (function () {
         const endpoint = "https://powertrans-tracking.vercel.app/api/visit";
+        const params = new URLSearchParams(window.location.search);
+        const leadId = params.get("lid") || null
+        const source = params.get("source") || null
       
         fetch(endpoint, {
           method: "POST",
@@ -1408,6 +1411,8 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             referrer: document.referrer || null,
+            leadId: leadId,
+            source: source,
             path: window.location.pathname,
             ts: Date.now()
           })
