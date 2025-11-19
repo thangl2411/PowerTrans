@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  /* Font Nunito ưu tiên số 1, nếu lỗi sẽ dùng font hệ thống (system-ui) */
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+}
 :root {
   --blue: #0a2540; /* Deep Tech Blue */
   --green: #2ecc71; /* Energy Green */
@@ -19,11 +24,14 @@ html {
 }
 body {
   margin: 0;
-  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial;
   color: var(--text);
   background: #fff;
   line-height: 1.65;
+}
+h1, h2, h3, h4, h5, h6, input, textarea, button, select, a, .btn {
+  font-family: 'Nunito', system-ui, sans-serif !important;
 }
 h1,
 h2,
@@ -968,5 +976,34 @@ footer {
   .projects .pill {
     font-size: 11px;
     padding: 4px 8px;
+  }
+}
+/* Language Switcher */
+.lang-btn {
+  background: transparent;
+  border: 1px solid #0a2540;
+  color: #0a2540;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-btn:hover {
+  background: #0a2540;
+  color: #fff;
+}
+
+/* Điều chỉnh responsive cho mobile menu */
+@media (max-width: 680px) {
+  .lang-switch-mobile {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
   }
 }
